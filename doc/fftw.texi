@@ -46,10 +46,7 @@ approved by the Free Software Foundation.
 @titlepage
 @sp 10
 @comment The title is printed in a large font.
-@title{FFTW User's Manual}
 @subtitle For version @value{VERSION}, @value{UPDATED}
-@author{Matteo Frigo}
-@author{Steven G. Johnson}
 
 @c The following two commands start the copyright page.
 @page
@@ -80,35 +77,35 @@ This manual documents FFTW version @value{VERSION}.
 @end ifinfo
 
 @menu
-* Introduction::                
-* Tutorial::                    
-* FFTW Reference::              
-* Parallel FFTW::               
-* Calling FFTW from Fortran::   
-* Installation and Customization::  
-* Acknowledgments::             
-* License and Copyright::       
-* Concept Index::               
-* Library Index::               
+* Introduction::
+* Tutorial::
+* FFTW Reference::
+* Parallel FFTW::
+* Calling FFTW from Fortran::
+* Installation and Customization::
+* Acknowledgments::
+* License and Copyright::
+* Concept Index::
+* Library Index::
 
 @detailmenu --- The Detailed Node Listing ---
 
 Tutorial
 
-* Complex One-dimensional Transforms Tutorial::  
-* Complex Multi-dimensional Transforms Tutorial::  
-* Real One-dimensional Transforms Tutorial::  
-* Real Multi-dimensional Transforms Tutorial::  
-* Multi-dimensional Array Format::  
-* Words of Wisdom::             
+* Complex One-dimensional Transforms Tutorial::
+* Complex Multi-dimensional Transforms Tutorial::
+* Real One-dimensional Transforms Tutorial::
+* Real Multi-dimensional Transforms Tutorial::
+* Multi-dimensional Array Format::
+* Words of Wisdom::
 
 Multi-dimensional Array Format
 
-* Row-major Format::            
-* Column-major Format::         
-* Static Arrays in C::          
-* Dynamic Arrays in C::         
-* Dynamic Arrays in C-The Wrong Way::  
+* Row-major Format::
+* Column-major Format::
+* Static Arrays in C::
+* Dynamic Arrays in C::
+* Dynamic Arrays in C-The Wrong Way::
 
 Words of Wisdom
 
@@ -118,18 +115,18 @@ Words of Wisdom
 FFTW Reference
 
 * Data Types::                  real, complex, and halfcomplex numbers
-* One-dimensional Transforms Reference::  
-* Multi-dimensional Transforms Reference::  
-* Real One-dimensional Transforms Reference::  
-* Real Multi-dimensional Transforms Reference::  
-* Wisdom Reference::            
-* Memory Allocator Reference::  
-* Thread safety::               
+* One-dimensional Transforms Reference::
+* Multi-dimensional Transforms Reference::
+* Real One-dimensional Transforms Reference::
+* Real Multi-dimensional Transforms Reference::
+* Wisdom Reference::
+* Memory Allocator Reference::
+* Thread safety::
 
 One-dimensional Transforms Reference
 
 * fftw_create_plan::            Plan Creation
-* Discussion on Specific Plans::  
+* Discussion on Specific Plans::
 * fftw::                        Plan Execution
 * fftw_destroy_plan::           Plan Destruction
 * What FFTW Really Computes::   Definition of the DFT.
@@ -139,66 +136,66 @@ Multi-dimensional Transforms Reference
 * fftwnd_create_plan::          Plan Creation
 * fftwnd::                      Plan Execution
 * fftwnd_destroy_plan::         Plan Destruction
-* What FFTWND Really Computes::  
+* What FFTWND Really Computes::
 
 Real One-dimensional Transforms Reference
 
-* rfftw_create_plan::           Plan Creation   
-* rfftw::                       Plan Execution  
+* rfftw_create_plan::           Plan Creation
+* rfftw::                       Plan Execution
 * rfftw_destroy_plan::          Plan Destruction
-* What RFFTW Really Computes::  
+* What RFFTW Really Computes::
 
 Real Multi-dimensional Transforms Reference
 
 * rfftwnd_create_plan::         Plan Creation
 * rfftwnd::                     Plan Execution
-* Array Dimensions for Real Multi-dimensional Transforms::  
-* Strides in In-place RFFTWND::  
+* Array Dimensions for Real Multi-dimensional Transforms::
+* Strides in In-place RFFTWND::
 * rfftwnd_destroy_plan::        Plan Destruction
-* What RFFTWND Really Computes::  
+* What RFFTWND Really Computes::
 
 Wisdom Reference
 
-* fftw_export_wisdom::          
-* fftw_import_wisdom::          
-* fftw_forget_wisdom::          
+* fftw_export_wisdom::
+* fftw_import_wisdom::
+* fftw_forget_wisdom::
 
 Parallel FFTW
 
-* Multi-threaded FFTW::         
-* MPI FFTW::                    
+* Multi-threaded FFTW::
+* MPI FFTW::
 
 Multi-threaded FFTW
 
-* Installation and Supported Hardware/Software::  
-* Usage of Multi-threaded FFTW::  
-* How Many Threads to Use?::    
-* Using Multi-threaded FFTW in a Multi-threaded Program::  
-* Tips for Optimal Threading::  
+* Installation and Supported Hardware/Software::
+* Usage of Multi-threaded FFTW::
+* How Many Threads to Use?::
+* Using Multi-threaded FFTW in a Multi-threaded Program::
+* Tips for Optimal Threading::
 
 MPI FFTW
 
-* MPI FFTW Installation::       
-* Usage of MPI FFTW for Complex Multi-dimensional Transforms::  
-* MPI Data Layout::             
-* Usage of MPI FFTW for Real Multi-dimensional Transforms::  
-* Usage of MPI FFTW for Complex One-dimensional Transforms::  
-* MPI Tips::                    
+* MPI FFTW Installation::
+* Usage of MPI FFTW for Complex Multi-dimensional Transforms::
+* MPI Data Layout::
+* Usage of MPI FFTW for Real Multi-dimensional Transforms::
+* Usage of MPI FFTW for Complex One-dimensional Transforms::
+* MPI Tips::
 
 Calling FFTW from Fortran
 
-* Wrapper Routines::            
-* FFTW Constants in Fortran::   
-* Fortran Examples::            
+* Wrapper Routines::
+* FFTW Constants in Fortran::
+* Fortran Examples::
 
 Installation and Customization
 
-* Installation on Unix::        
-* Installation on non-Unix Systems::  
-* Installing FFTW in both single and double precision::  
-* gcc and Pentium hacks::  
-* Customizing the timer::       
-* Generating your own code::    
+* Installation on Unix::
+* Installation on non-Unix Systems::
+* Installing FFTW in both single and double precision::
+* gcc and Pentium hacks::
+* Customizing the timer::
+* Generating your own code::
 
 @end detailmenu
 @end menu
@@ -301,7 +298,7 @@ Adaptive Software Architecture for the FFT,'' by M. Frigo and
 S. G. Johnson, which appeared in the 23rd International Conference on
 Acoustics, Speech, and Signal Processing (@cite{Proc. ICASSP 1998}
 @b{3}, p. 1381).  The code generator is described in the paper ``A Fast
-Fourier Transform Compiler'', 
+Fourier Transform Compiler'',
 @cindex compiler
 by M. Frigo, to appear in the @cite{Proceedings of the 1999 ACM SIGPLAN
 Conference on Programming Language Design and Implementation (PLDI),
@@ -368,12 +365,12 @@ alternatives for storing multi-dimensional arrays in memory.  @ref{Words
 of Wisdom} shows how you can save FFTW's plans for future use.
 
 @menu
-* Complex One-dimensional Transforms Tutorial::  
-* Complex Multi-dimensional Transforms Tutorial::  
-* Real One-dimensional Transforms Tutorial::  
-* Real Multi-dimensional Transforms Tutorial::  
-* Multi-dimensional Array Format::  
-* Words of Wisdom::             
+* Complex One-dimensional Transforms Tutorial::
+* Complex Multi-dimensional Transforms Tutorial::
+* Real One-dimensional Transforms Tutorial::
+* Real Multi-dimensional Transforms Tutorial::
+* Multi-dimensional Array Format::
+* Words of Wisdom::
 @end menu
 
 @node  Complex One-dimensional Transforms Tutorial, Complex Multi-dimensional Transforms Tutorial, Tutorial, Tutorial
@@ -394,7 +391,7 @@ The basic usage of FFTW is simple.  A typical call to FFTW looks like:
      ...
      fftw_one(p, in, out);
      ...
-     fftw_destroy_plan(p);  
+     fftw_destroy_plan(p);
 @}
 @end example
 
@@ -572,7 +569,7 @@ array might look like:
      ...
      fftwnd_one(p, &in[0][0][0], NULL);
      ...
-     fftwnd_destroy_plan(p);  
+     fftwnd_destroy_plan(p);
 @}
 @end example
 
@@ -747,7 +744,7 @@ Also as in one dimension, these gains come at the expense of some
 increase in complexity---the output format is different from the
 one-dimensional RFFTW (and is more similar to that of the complex FFTW)
 and the inverse (complex to real) transforms have the side-effect of
-overwriting their input data.  
+overwriting their input data.
 
 To use the real multi-dimensional transforms, you first @code{#include
 <rfftw.h>} and then create a plan for the size and direction of
@@ -898,11 +895,11 @@ arrows indicating consecutive memory locations).
 \vfill
 \vskip405pt
 \hskip40pt
-\special{psfile="rfftwnd.eps" 
+\special{psfile="rfftwnd.eps"
 }
 \vskip 24pt
 Figure 1: Illustration of the data layout for real to complex
-transforms.  
+transforms.
 \vfill
 \endinsert}
 @end tex
@@ -1001,11 +998,11 @@ different formats are common.  Although the comments below refer to
 @code{fftwnd}, they are also applicable to the @code{rfftwnd} routines.
 
 @menu
-* Row-major Format::            
-* Column-major Format::         
-* Static Arrays in C::          
-* Dynamic Arrays in C::         
-* Dynamic Arrays in C-The Wrong Way::  
+* Row-major Format::
+* Column-major Format::
+* Static Arrays in C::
+* Dynamic Arrays in C::
+* Dynamic Arrays in C-The Wrong Way::
 @end menu
 
 @node Row-major Format, Column-major Format, Multi-dimensional Array Format, Multi-dimensional Array Format
@@ -1139,7 +1136,7 @@ fftw_complex ***a_bad_array;  /* another way to make a 5x12x27 array */
 
 a_bad_array = (fftw_complex ***) malloc(5 * sizeof(fftw_complex **));
 for (i = 0; i < 5; ++i) @{
-     a_bad_array[i] = 
+     a_bad_array[i] =
         (fftw_complex **) malloc(12 * sizeof(fftw_complex *));
      for (j = 0; j < 12; ++j)
           a_bad_array[i][j] =
@@ -1422,13 +1419,13 @@ For parallel transforms, @xref{Parallel FFTW}.
 
 @menu
 * Data Types::                  real, complex, and halfcomplex numbers
-* One-dimensional Transforms Reference::  
-* Multi-dimensional Transforms Reference::  
-* Real One-dimensional Transforms Reference::  
-* Real Multi-dimensional Transforms Reference::  
-* Wisdom Reference::            
-* Memory Allocator Reference::  
-* Thread safety::               
+* One-dimensional Transforms Reference::
+* Multi-dimensional Transforms Reference::
+* Real One-dimensional Transforms Reference::
+* Real Multi-dimensional Transforms Reference::
+* Wisdom Reference::
+* Memory Allocator Reference::
+* Thread safety::
 @end menu
 
 @c -------------------------------------------------------
@@ -1525,7 +1522,7 @@ Y<sub>2</sub> = Re(X<sub>2</sub>), and  Y<sub>3</sub> = Im(X<sub>1</sub>).
 Let now @math{n = 5}.  In this case, we have
 @tex
 $Y_0 := \hbox{Re}(X_0)$, $Y_1 := \hbox{Re}(X_1)$,
-$Y_2 := \hbox{Re}(X_2)$, $Y_3 := \hbox{Im}(X_2)$, and 
+$Y_2 := \hbox{Re}(X_2)$, $Y_3 := \hbox{Im}(X_2)$, and
 $Y_4 := \hbox{Im}(X_1)$.
 @end tex
 @ifinfo
@@ -1567,7 +1564,7 @@ general.
 
 @menu
 * fftw_create_plan::            Plan Creation
-* Discussion on Specific Plans::  
+* Discussion on Specific Plans::
 * fftw::                        Plan Execution
 * fftw_destroy_plan::           Plan Destruction
 * What FFTW Really Computes::   Definition of the DFT.
@@ -1618,7 +1615,7 @@ ignored, so the arrays need not have been initialized).
 @item
 @code{n} is the size of the transform.  It can be
  any positive integer.
- 
+
 @itemize @minus
 @item
 FFTW is best at handling sizes of the form
@@ -1635,7 +1632,7 @@ $2^a 3^b 5^c 7^d 11^e 13^f$,
 where @math{e+f} is either @math{0} or
 @math{1}, and the other exponents are arbitrary.  Other sizes are
 computed by means of a slow, general-purpose routine (which nevertheless
-retains 
+retains
 @tex
 $O(n \log n)$
 @end tex
@@ -1769,7 +1766,7 @@ void fftw(fftw_plan plan, int howmany,
           fftw_complex *in, int istride, int idist,
           fftw_complex *out, int ostride, int odist);
 
-void fftw_one(fftw_plan plan, fftw_complex *in, 
+void fftw_one(fftw_plan plan, fftw_complex *in,
           fftw_complex *out);
 @end example
 @findex fftw
@@ -1913,7 +1910,7 @@ general.
 * fftwnd_create_plan::          Plan Creation
 * fftwnd::                      Plan Execution
 * fftwnd_destroy_plan::         Plan Destruction
-* What FFTWND Really Computes::  
+* What FFTWND Really Computes::
 @end menu
 
 @node   fftwnd_create_plan, fftwnd, Multi-dimensional Transforms Reference, Multi-dimensional Transforms Reference
@@ -2083,7 +2080,7 @@ void fftwnd(fftwnd_plan plan, int howmany,
             fftw_complex *in, int istride, int idist,
             fftw_complex *out, int ostride, int odist);
 
-void fftwnd_one(fftwnd_plan p, fftw_complex *in, 
+void fftwnd_one(fftwnd_plan p, fftw_complex *in,
                 fftw_complex *out);
 @end example
 @findex fftwnd
@@ -2199,7 +2196,7 @@ Y[i_1, i_2, \ldots, i_d] =
         \sum_{j_2 = 0}^{n_2 - 1}
            \cdots
               \sum_{j_d = 0}^{n_d - 1}
-                  X[j_1, j_2, \ldots, j_d] 
+                  X[j_1, j_2, \ldots, j_d]
                       \omega_1^{-i_1 j_1}
                       \omega_2^{-i_2 j_2}
                       \cdots
@@ -2213,7 +2210,7 @@ Y[i_1, i_2, \ldots, i_d] =
         \sum_{j_2 = 0}^{n_2 - 1}
            \cdots
               \sum_{j_d = 0}^{n_d - 1}
-                  X[j_1, j_2, \ldots, j_d] 
+                  X[j_1, j_2, \ldots, j_d]
                       \omega_1^{i_1 j_1}
                       \omega_2^{i_2 j_2}
                       \cdots
@@ -2250,10 +2247,10 @@ the RFFTW, the FFTW, and the standard math libraries in general.
 @cindex complex to real transform
 
 @menu
-* rfftw_create_plan::           Plan Creation   
-* rfftw::                       Plan Execution  
+* rfftw_create_plan::           Plan Creation
+* rfftw::                       Plan Execution
 * rfftw_destroy_plan::          Plan Destruction
-* What RFFTW Really Computes::  
+* What RFFTW Really Computes::
 @end menu
 
 @node    rfftw_create_plan, rfftw, Real One-dimensional Transforms Reference, Real One-dimensional Transforms Reference
@@ -2298,7 +2295,7 @@ ignored, so the arrays need not have been initialized).
 @item
 @code{n} is the size of the transform.  It can be
  any positive integer.
- 
+
 @itemize @minus
 @item
 RFFTW is best at handling sizes of the form
@@ -2414,8 +2411,8 @@ One-dimensional Transform}.)  In particular, the @code{out} and
 @example
 #include <rfftw.h>
 
-void rfftw(rfftw_plan plan, int howmany, 
-           fftw_real *in, int istride, int idist, 
+void rfftw(rfftw_plan plan, int howmany,
+           fftw_real *in, int istride, int idist,
            fftw_real *out, int ostride, int odist);
 
 void rfftw_one(rfftw_plan plan, fftw_real *in, fftw_real *out);
@@ -2500,7 +2497,7 @@ is no longer valid.
 @node What RFFTW Really Computes,  , rfftw_destroy_plan, Real One-dimensional Transforms Reference
 @subsection What RFFTW Really Computes
 @cindex Discrete Fourier Transform
-In this section, we define precisely what RFFTW computes. 
+In this section, we define precisely what RFFTW computes.
 
 The real to complex (@code{FFTW_REAL_TO_COMPLEX}) transform of a real
 array @math{X} of size @math{n} computes an hermitian array @math{Y},
@@ -2561,10 +2558,10 @@ standard math libraries in general.
 @menu
 * rfftwnd_create_plan::         Plan Creation
 * rfftwnd::                     Plan Execution
-* Array Dimensions for Real Multi-dimensional Transforms::  
-* Strides in In-place RFFTWND::  
+* Array Dimensions for Real Multi-dimensional Transforms::
+* Strides in In-place RFFTWND::
 * rfftwnd_destroy_plan::        Plan Destruction
-* What RFFTWND Really Computes::  
+* What RFFTWND Really Computes::
 @end menu
 
 @node   rfftwnd_create_plan, rfftwnd, Real Multi-dimensional Transforms Reference, Real Multi-dimensional Transforms Reference
@@ -2956,7 +2953,7 @@ real-to-complex and the backward transform is complex-to-real.
 @cindex hermitian array
 @tex
 The exact mathematical definition of our real multi-dimensional
-transform follows. 
+transform follows.
 
 @noindent@emph{Real to complex (forward) transform.}
 Let $X$ be a $d$-dimensional real array whose elements are $X[j_1, j_2,
@@ -2973,7 +2970,7 @@ Y[i_1, i_2, \ldots, i_d] =
         \sum_{j_2 = 0}^{n_2 - 1}
            \cdots
               \sum_{j_d = 0}^{n_d - 1}
-                  X[j_1, j_2, \ldots, j_d] 
+                  X[j_1, j_2, \ldots, j_d]
                       \omega_1^{-i_1 j_1}
                       \omega_2^{-i_2 j_2}
                       \cdots
@@ -3006,7 +3003,7 @@ Y[i_1, i_2, \ldots, i_d] =
         \sum_{j_2 = 0}^{n_2 - 1}
            \cdots
               \sum_{j_d = 0}^{n_d - 1}
-                  X[j_1, j_2, \ldots, j_d] 
+                  X[j_1, j_2, \ldots, j_d]
                       \omega_1^{i_1 j_1}
                       \omega_2^{i_2 j_2}
                       \cdots
@@ -3037,9 +3034,9 @@ uses.  For completeness, we include a bitmap of the TeX output below:
 @node Wisdom Reference, Memory Allocator Reference, Real Multi-dimensional Transforms Reference, FFTW Reference
 @section Wisdom Reference
 @menu
-* fftw_export_wisdom::          
-* fftw_import_wisdom::          
-* fftw_forget_wisdom::          
+* fftw_export_wisdom::
+* fftw_import_wisdom::
+* fftw_forget_wisdom::
 @end menu
 
 @cindex wisdom
@@ -3144,7 +3141,7 @@ to be discarded and its associated memory to be freed. (New
 
 @c -------------------------------------------------------
 @node    Memory Allocator Reference, Thread safety, Wisdom Reference, FFTW Reference
-@section Memory Allocator Reference 
+@section Memory Allocator Reference
 
 @example
 #include <fftw.h>
@@ -3158,7 +3155,7 @@ void (*fftw_free_hook) (void *p);
 @vindex fftw_free_hook
 
 Whenever it has to allocate and release memory, FFTW ordinarily calls
-@code{malloc} and @code{free}.  
+@code{malloc} and @code{free}.
 If @code{malloc} fails, FFTW prints an error message and exits.  This
 behavior may be undesirable in some applications. Also, special
 memory-handling functions may be necessary in certain
@@ -3259,8 +3256,8 @@ routines are documented in @code{cilk/README}.
 @end itemize
 
 @menu
-* Multi-threaded FFTW::         
-* MPI FFTW::                    
+* Multi-threaded FFTW::
+* MPI FFTW::
 @end menu
 
 @c ------------------------------------------------------------
@@ -3278,11 +3275,11 @@ parameter.  Any program that uses the uniprocessor FFTW can be trivially
 modified to use the multi-threaded FFTW.
 
 @menu
-* Installation and Supported Hardware/Software::  
-* Usage of Multi-threaded FFTW::  
-* How Many Threads to Use?::    
-* Using Multi-threaded FFTW in a Multi-threaded Program::  
-* Tips for Optimal Threading::  
+* Installation and Supported Hardware/Software::
+* Usage of Multi-threaded FFTW::
+* How Many Threads to Use?::
+* Using Multi-threaded FFTW in a Multi-threaded Program::
+* Tips for Optimal Threading::
 @end menu
 
 @c -------------------------------------------------------
@@ -3349,7 +3346,7 @@ one of the following transform routines instead of the ordinary FFTW
 functions:
 
 @example
-fftw_threads(nthreads, plan, howmany, in, istride, 
+fftw_threads(nthreads, plan, howmany, in, istride,
              idist, out, ostride, odist);
 @findex fftw_threads
 
@@ -3363,14 +3360,14 @@ fftwnd_threads(nthreads, plan, howmany, in, istride,
 fftwnd_threads_one(nthreads, plan, in, out);
 @findex fftwnd_threads_one
 
-rfftw_threads(nthreads, plan, howmany, in, istride, 
+rfftw_threads(nthreads, plan, howmany, in, istride,
               idist, out, ostride, odist);
 @findex rfftw_threads
 
 rfftw_threads_one(nthreads, plan, in, out);
 @findex rfftw_threads_one
 
-rfftwnd_threads_real_to_complex(nthreads, plan, howmany, in, 
+rfftwnd_threads_real_to_complex(nthreads, plan, howmany, in,
                                 istride, idist, out, ostride, odist);
 @findex rfftwnd_threads_real_to_complex
 
@@ -3528,12 +3525,12 @@ Currently, multi-dimensional transforms of both real and complex data,
 as well as one-dimensional transforms of complex data, are supported.
 
 @menu
-* MPI FFTW Installation::       
-* Usage of MPI FFTW for Complex Multi-dimensional Transforms::  
-* MPI Data Layout::             
-* Usage of MPI FFTW for Real Multi-dimensional Transforms::  
-* Usage of MPI FFTW for Complex One-dimensional Transforms::  
-* MPI Tips::                    
+* MPI FFTW Installation::
+* Usage of MPI FFTW for Complex Multi-dimensional Transforms::
+* MPI Data Layout::
+* Usage of MPI FFTW for Real Multi-dimensional Transforms::
+* Usage of MPI FFTW for Complex One-dimensional Transforms::
+* MPI Tips::
 @end menu
 
 @c -------------------------------------------------------
@@ -3920,7 +3917,7 @@ int main(int argc, char **argv)
 
      /* the data is now complex, so typecast a pointer: */
      cdata = (fftw_complex*) data;
-     
+
      /* multiply imaginary part by 2, for fun:
         (note that the data is transposed) */
      for (y = 0; y < local_ny_after_transpose; ++y)
@@ -4029,7 +4026,7 @@ of the multi-dimensional MPI transform functions.  You first include the
 header @code{<fftw_mpi.h>} and then create a plan by calling:
 
 @example
-fftw_mpi_plan fftw_mpi_create_plan(MPI_Comm comm, int n, 
+fftw_mpi_plan fftw_mpi_create_plan(MPI_Comm comm, int n,
                                    fftw_direction dir, int flags);
 @end example
 @findex fftw_mpi_create_plan
@@ -4186,9 +4183,9 @@ normally with the FFTW libraries.  There are a few wrinkles, however, as
 we shall discuss below.
 
 @menu
-* Wrapper Routines::            
-* FFTW Constants in Fortran::   
-* Fortran Examples::            
+* Wrapper Routines::
+* FFTW Constants in Fortran::
+* Fortran Examples::
 @end menu
 
 @c -------------------------------------------------------
@@ -4456,12 +4453,12 @@ standard FFTW distribution.
 @cindex installation
 
 @menu
-* Installation on Unix::        
-* Installation on non-Unix Systems::  
-* Installing FFTW in both single and double precision::  
-* gcc and Pentium hacks::  
-* Customizing the timer::       
-* Generating your own code::    
+* Installation on Unix::
+* Installation on non-Unix Systems::
+* Installing FFTW in both single and double precision::
+* gcc and Pentium hacks::
+* Customizing the timer::
+* Generating your own code::
 @end menu
 
 @node Installation on Unix, Installation on non-Unix Systems, Installation and Customization, Installation and Customization
@@ -4800,7 +4797,7 @@ sizes that are not currently supported efficiently (say, 17 or 19).
 We do not provide more details about the code-generation process, since
 we do not expect that users will need to generate their own code.
 However, feel free to contact us at @email{fftw@@fftw.org} if
-you are interested in the subject.  
+you are interested in the subject.
 
 @cindex monadic programming
 You might find it interesting to learn Caml and/or some modern
@@ -4861,7 +4858,7 @@ Prof.@ John D.@ Joannopoulos of MIT demonstrated continuing tolerance of
 Steven's ``extra-curricular'' computer-science activities.  Steven's
 chances at a physics degree would not exist without him.
 
-Andrew Sterian contributed the Windows timing code.  
+Andrew Sterian contributed the Windows timing code.
 
 Didier Miras reported a bug in the test procedure used in FFTW 1.2.  We
 now use a completely different test algorithm by Funda Ergun that does
